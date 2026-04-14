@@ -8,58 +8,73 @@
 </head>
 <body>
 
-    <header>
+    <header class="container">
         <h1>Decision Pilot IA</h1>
-        <p>Herramienta para estructurar decisiones complejas mediante prompts. No automatiza decisiones: te ayuda a pensarlas mejor.</p>
+        <p class="descripcion">
+            Esta herramienta te ayuda a estructurar decisiones complejas mediante prompts.
+            No toma decisiones por ti: te obliga a analizar, comparar y justificar.
+        </p>
     </header>
 
-    <main>
+    <main class="container">
 
         <!-- Selector de caso -->
-        <section>
-            <label for="caso">Selecciona un caso de uso:</label>
+        <section class="bloque">
+            <h2>1. Selecciona el tipo de decisión</h2>
+            <label for="caso">Caso de uso:</label>
             <select id="caso">
                 <option value="admisiones">Admisión y becas universitarias</option>
                 <option value="soporte">Tickets internos de soporte TI</option>
                 <option value="ecommerce">Devoluciones y fraude en e-commerce</option>
                 <option value="documentacion">Asistente de documentación corporativa</option>
             </select>
+            <p class="nota">Cada caso tiene riesgos, métricas y decisiones diferentes.</p>
         </section>
 
         <!-- Formulario -->
-        <section>
+        <section class="bloque">
+            <h2>2. Define la situación</h2>
+
             <label for="contexto">Contexto</label>
             <textarea id="contexto" placeholder="Describe la situación actual..."></textarea>
 
             <label for="decision">Decisión a tomar</label>
-            <textarea id="decision" placeholder="¿Qué decisión hay que tomar?"></textarea>
+            <textarea id="decision" placeholder="¿Qué decisión concreta hay que tomar?"></textarea>
 
             <label for="datos">Datos disponibles</label>
-            <textarea id="datos" placeholder="Datos relevantes, métricas, volumen..."></textarea>
+            <textarea id="datos" placeholder="Volumen, métricas, información relevante..."></textarea>
 
             <label for="restricciones">Restricciones</label>
             <textarea id="restricciones" placeholder="Limitaciones, riesgos, condiciones..."></textarea>
+
+            <p class="nota">
+                Cuanto más claro seas aquí, mejor será la calidad del prompt generado.
+            </p>
         </section>
 
-        <!-- Botones -->
-        <section>
+        <!-- Acciones -->
+        <section class="bloque acciones">
+            <h2>3. Genera el análisis</h2>
             <button id="generarBtn">Generar prompt</button>
-            <button id="copiarBtn">Copiar prompt</button>
+            <button id="copiarBtn" disabled>Copiar prompt</button>
         </section>
 
         <!-- Resultado -->
-        <section>
-            <h2>Prompt generado</h2>
-            <textarea id="resultado" readonly placeholder="Aquí aparecerá el prompt..."></textarea>
+        <section class="bloque resultado">
+            <h2>4. Prompt generado</h2>
+            <textarea id="resultado" readonly placeholder="Aquí aparecerá el prompt estructurado..."></textarea>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="container">
         <p>Proyecto educativo · Decision Pilot IA</p>
-        <p><a href="#" target="_blank">Repositorio en GitHub</a></p>
+        <p>
+            <a href="#" target="_blank">Repositorio en GitHub</a>
+        </p>
     </footer>
 
+    <!-- Scripts -->
     <script src="prompts.js"></script>
     <script src="app.js"></script>
 
