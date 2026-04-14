@@ -1,0 +1,162 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #2c2c2c;
+    line-height: 1.6;
+}
+
+/* Contenedor */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #555;
+    max-width: 700px;
+}
+
+/* Bloques tipo tarjeta */
+.bloque {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Títulos de sección */
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1f3c88;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Inputs */
+textarea,
+select {
+    width: 100%;
+    margin-top: 5px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* Mejora de escritura */
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Focus */
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #2d6cdf;
+    box-shadow: 0 0 0 2px rgba(45, 108, 223, 0.2);
+}
+
+/* Resultado destacado */
+.resultado textarea {
+    min-height: 220px;
+    background-color: #f9fbff;
+    font-family: "Courier New", monospace;
+}
+
+/* Botones */
+button {
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+/* Botón principal */
+#generarBtn {
+    background-color: #2d6cdf;
+    color: white;
+}
+
+#generarBtn:hover {
+    background-color: #1f4fbf;
+}
+
+/* Botón secundario */
+#copiarBtn {
+    background-color: #6c757d;
+    color: white;
+}
+
+#copiarBtn:hover {
+    background-color: #545b62;
+}
+
+/* Click feedback */
+button:active {
+    transform: scale(0.97);
+}
+
+/* Deshabilitado */
+button:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+}
+
+/* Notas */
+.nota {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
