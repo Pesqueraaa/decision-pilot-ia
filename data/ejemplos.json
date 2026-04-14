@@ -1,0 +1,37 @@
+{
+  "admisiones": {
+    "nombre": "Admisión y becas universitarias",
+    "descripcion": "Evaluación de solicitudes académicas con criterios de equidad.",
+    "contexto": "La universidad recibe 12.000 solicitudes anuales. Un 35% de los expedientes están incompletos y el proceso es manual.",
+    "decision": "Determinar si conviene implementar un asistente con IA para prevalidar solicitudes y resumir expedientes.",
+    "datos": "12.000 solicitudes/año, 35% incompletas, resolución media 30 días, datos académicos sensibles, necesidad de revisión humana.",
+    "restricciones": "Debe garantizarse equidad, evitar sesgos, mantener trazabilidad y asegurar intervención humana en decisiones finales."
+  },
+
+  "soporte": {
+    "nombre": "Tickets internos de soporte TI",
+    "descripcion": "Gestión y clasificación de incidencias internas.",
+    "contexto": "El departamento de TI recibe 2.500 tickets mensuales con alta repetición de problemas comunes.",
+    "decision": "Evaluar si automatizar la clasificación y el escalado inicial de tickets.",
+    "datos": "2.500 tickets/mes, 40% repetidos, 5% críticos, tiempo de respuesta actual 18h, SLA objetivo 8h.",
+    "restricciones": "Los incidentes críticos deben ser gestionados por humanos, no puede haber errores en la priorización."
+  },
+
+  "ecommerce": {
+    "nombre": "Devoluciones y fraude en e-commerce",
+    "descripcion": "Gestión de devoluciones con control de fraude.",
+    "contexto": "La empresa procesa 8.000 devoluciones mensuales con sospecha de fraude en algunos casos.",
+    "decision": "Determinar si automatizar devoluciones estándar y aplicar IA para detectar fraude.",
+    "datos": "8.000 devoluciones/mes, fraude estimado 7%, valor medio 60€, resolución en 5 días.",
+    "restricciones": "Pedidos de alto valor deben revisarse manualmente, evitar impacto negativo en la experiencia del cliente."
+  },
+
+  "documentacion": {
+    "nombre": "Asistente de documentación corporativa",
+    "descripcion": "Consulta de información interna mediante IA.",
+    "contexto": "La empresa tiene 500 empleados y gran volumen de documentación interna dispersa.",
+    "decision": "Evaluar qué arquitectura implementar para un asistente de consulta documental.",
+    "datos": "500 usuarios, 2.000 consultas diarias, documentación sensible, latencia máxima 3 segundos.",
+    "restricciones": "Debe protegerse la privacidad, controlar el coste mensual y garantizar acceso seguro a la información."
+  }
+}
