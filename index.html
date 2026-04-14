@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Pilot IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Decision Pilot IA</h1>
+        <p>Herramienta para estructurar decisiones complejas mediante prompts. No automatiza decisiones: te ayuda a pensarlas mejor.</p>
+    </header>
+
+    <main>
+
+        <!-- Selector de caso -->
+        <section>
+            <label for="caso">Selecciona un caso de uso:</label>
+            <select id="caso">
+                <option value="admisiones">Admisión y becas universitarias</option>
+                <option value="soporte">Tickets internos de soporte TI</option>
+                <option value="ecommerce">Devoluciones y fraude en e-commerce</option>
+                <option value="documentacion">Asistente de documentación corporativa</option>
+            </select>
+        </section>
+
+        <!-- Formulario -->
+        <section>
+            <label for="contexto">Contexto</label>
+            <textarea id="contexto" placeholder="Describe la situación actual..."></textarea>
+
+            <label for="decision">Decisión a tomar</label>
+            <textarea id="decision" placeholder="¿Qué decisión hay que tomar?"></textarea>
+
+            <label for="datos">Datos disponibles</label>
+            <textarea id="datos" placeholder="Datos relevantes, métricas, volumen..."></textarea>
+
+            <label for="restricciones">Restricciones</label>
+            <textarea id="restricciones" placeholder="Limitaciones, riesgos, condiciones..."></textarea>
+        </section>
+
+        <!-- Botones -->
+        <section>
+            <button id="generarBtn">Generar prompt</button>
+            <button id="copiarBtn">Copiar prompt</button>
+        </section>
+
+        <!-- Resultado -->
+        <section>
+            <h2>Prompt generado</h2>
+            <textarea id="resultado" readonly placeholder="Aquí aparecerá el prompt..."></textarea>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto educativo · Decision Pilot IA</p>
+        <p><a href="#" target="_blank">Repositorio en GitHub</a></p>
+    </footer>
+
+    <script src="prompts.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
